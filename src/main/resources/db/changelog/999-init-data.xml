@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.1.xsd">
+    <changeSet id="2021-12-09-department-data-v16" author="Veronika">
+        <loadData tableName="DEPARTMENT" file="db/changelog/data/department.csv"/>
+    </changeSet>
+    <changeSet id="2021-12-21-employee-data-v7" author="Veronika">
+        <loadData tableName="EMPLOYEE" file="db/changelog/data/employee.csv"/>
+    </changeSet>
+</databaseChangeLog>

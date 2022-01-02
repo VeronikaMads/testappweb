@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org">
+
+<body>
+
+<h2>Employee</h2>
+
+<table id="pets" class="table table-striped">
+    <thead>
+    <tr>
+        <th th:text="#{first_name}"></th>
+        <th th:text="#{last_name}"></th>
+        <th th:text="#{gender}"></th>
+        <th th:text="#{data_of_birth}"></th>
+        <th th:text="#{job_title}"></th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="employee : ${selections}">
+        <td>
+            <a th:href="@{/employees/__${employee.employeeId}__}" th:text="${employee.LastName}">Last name</a>
+        </td>
+        <td th:text="${employee.firstName}" style="width: 150px"></td>
+        <td th:text="${employee.gender}" style="width: 150px"></td>
+        <td th:text="${employee.dataOfBirth}" style="width: 150px"></td>
+        <td th:text="${employee.jobTitle}" style="width: 150px"></td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>

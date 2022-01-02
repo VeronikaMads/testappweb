@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2 th:text="#{employee_information}"></h2>
+
+<table class="table table-striped" th:object="${employee}">
+    <tr>
+        <th th:text="#{first_name}"></th>
+        <td><b th:text="*{firstName}"></b></td>
+    </tr>
+    <tr>
+        <th th:text="#{last_name}"></th>
+        <td><b th:text="*{lastName}"></b></td>
+    </tr>
+    <tr>
+        <th th:text="#{gender}"></th>
+        <td><b th:text="*{gender}"></b></td>
+    </tr>
+    <tr>
+        <th th:text="#{data_of_birth}"></th>
+        <td><b th:text="*{dataOfBirth}"></b></td>
+    </tr>
+    <tr>
+        <th th:text="#{job_title}"></th>
+        <td><b th:text="*{jobTitle}"></b></td>
+    </tr>
+</table>
+
+<a th:href="@{{id}/edit(id=${employee.employeeId})}" class="btn btn-default">Edit Employee</a>
+
+</body>
+</html>

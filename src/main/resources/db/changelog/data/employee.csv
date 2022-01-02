@@ -1,0 +1,6 @@
+"employee_id","created_at","last_modified_at","first_name","last_name","gender","data_of_birth","job_title","department_id"
+"1","2021-12-01","2021-12-01","Petrov","Nikolay","MALE","1996-10-01","meat binder","5"
+"2","2021-12-01","2021-12-01","Kushneruk","Yulia","FEMALE","1995-06-21","economist","4"
+"3","2021-12-01","2021-12-01","Minets","Nikita","MALE","1992-11-25","marketer","3"
+"4","2021-12-01","2021-12-01","Pavlyukovich","Tatyana","FEMALE","1992-01-29","laboratory assistant","2"
+"5","2021-12-01","2021-12-01","Chaburco","Natalya","FEMALE","1994-06-15","programmer","1"
